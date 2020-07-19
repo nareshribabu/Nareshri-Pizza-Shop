@@ -1,0 +1,399 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #777;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/*Nav Bar*/
+.navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  letter-spacing: 4px;
+  opacity: 0.9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item {
+  padding-right: 15px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Carousel Section */
+.carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-caption h3 {
+  color: #fff !important;
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20%;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* About Section */
+.about {
+  padding: 80px 120px;
+  /* background-color: blue; */
+}
+
+.about-title {
+  font-size: 45px;
+  letter-spacing: 4px;
+}
+
+.about-subtitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+.about-paragraph {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.features {
+  background-color: #fff;
+  position: relative;
+  padding-top: 30px;
+  /* background-color: yellow; */
+  letter-spacing: 4px;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #474a56;
+  margin-bottom: 1rem;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Menu Section */
+.menu-container {
+  /* background-color: blue; */
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.menu-title {
+  font-size: 45px;
+  letter-spacing: 4px;
+}
+
+.menu-subtitle {
+  margin-bottom: 0px;
+  margin-top: 25px;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* background-color: purple; */
+}
+
+.card {
+  background-color: transparent;
+  /* background-color: blue; */
+  margin: 20px;
+  height: 23rem;
+  border: 3px solid rgba(0, 0, 0, .125);
+}
+
+.pizzaTitle {
+  padding-top: 15px;
+  font-size: 25px;
+  margin-bottom: 0;
+  letter-spacing: 4px;
+}
+
+
+/*FLIP CARD ANIMATION*/
+/* The flip card container*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  1px solid rgba(0, 0, 0, .125);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: black;
+  transform: rotateY(180deg);
+}
+
+/* Inside Card options*/
+/* Info On the back */
+.infoBack {
+  padding-top: 20px;
+  /* background-color: blue; */
+}
+
+.price {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  letter-spacing: 4px;
+}
+
+/*Information Ingredients popup*/
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 190px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 74%;
+  left: 50%;
+  margin-left: -80px;
+  font-size: 10px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup:hover .popuptext {
+  visibility: visible;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Contact Section */
+#contact {
+  /* background-color: green; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  letter-spacing: 4px;
+}
+
+.information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .information {
+    text-align: center;
+  }
+
+  .contact-send {
+    margin: -20px -50px;
+    position: relative;
+    left: 50%;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Pop Up Modal  */
+.modal-header, .modal-title, .close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-header, .modal-body {
+  padding: 25px 40px;
+}
+
+.form-subtitle {
+  color: #393e46;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.quantity {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.modal-footer {
+  display: inline-block;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Hours */
+.hours-title {
+  font-size: 45px;
+  padding-bottom: 60px;
+  letter-spacing: 4px;
+}
+
+#hours {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.table {
+  letter-spacing: 4px;
+  color: #777;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Footer */
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 32px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 4px;
+  font-size: 15px;
+  color: #777;
+
+}
+
+.up-arrow {
+  color: #f5f5f5;
+}
+
+.up-arrow:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+.social-icon {
+  padding: 10px;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Animation */
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* This website was created for learning purposes only.
+None of the images belong to me and are used for learning purposes.*/
