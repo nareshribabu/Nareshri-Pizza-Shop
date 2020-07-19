@@ -11,5 +11,16 @@ Nareshri's Pizza Shop is a responsive website for a pizza shop.
 - The website also has a contact form
 
 ## Live Demo:
+https://nareshribabu.github.io/Nareshri-Pizza-Shop/
+
+## Technology Used:
+- HTML
+- CSS
+- JavaScript
+
+## Notes:
+- This app was created for learning purposes only.
+- None of the images belong to me and are used for learning purposes only
+  - https://unsplash.com/
 
 
